@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+:root {
+  --bg-primary: #FAFAF9;
+  --bg-card: #FFFFFF;
+  --text-primary: #111827;
+  --text-muted: #767676;
+  --accent-pinterest: #064E3B;
+  --accent-pinterest-dark: #022C22;
+  --accent-rose: #ECFDF5;
+  --accent-rose-border: #A7F3D0;
+  --status-green: #10B981;
+  --status-yellow: #F59E0B;
+  --status-red: #064E3B;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  min-height: 100vh;
+}
+
+/* Accessible high-contrast focus rings */
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 3px solid #065F46;
+  outline-offset: 2px;
+}
+
+/* Low-bandwidth mode overrides */
+.low-bandwidth-active * {
+  animation: none !important;
+  transition: none !important;
+  box-shadow: none !important;
+}
+
+/* Touch targets minimum 48px */
+.tap-target {
+  min-height: 48px;
+  min-width: 48px;
+}
